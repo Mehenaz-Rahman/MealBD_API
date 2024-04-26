@@ -1,4 +1,3 @@
-// JavaScript code for searching meals using the MealDB API
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
@@ -52,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
         blogCard.innerHTML = `
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
             <h2>${meal.strMeal}</h2>
-            <p>ID: ${meal.idMeal}</p>
-            <p>Title: ${meal.strMeal}</p>
-            <p>Instructions: ${meal.strInstructions}</p>
+            <p><strong>ID:</strong> ${meal.idMeal}</p>
+            <p><strong>Title:</strong> ${meal.strMeal}</p>
+            <p><strong>Instructions:</strong> ${meal.strInstructions}</p>
         `;
         return blogCard;
     }
@@ -69,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
 
 
 
